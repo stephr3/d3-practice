@@ -29,6 +29,9 @@
         .attr('height', function(d) { //set the data as the top (which is the bottom...)
           d = d * 4;
           return d;
+        })
+        .attr('fill', function(d) {
+          return' rgb(0,0,' + (d * 10) + ')';
         });
     </script>
   </body>
